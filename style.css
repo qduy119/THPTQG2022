@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  bottom: 100px;
+}
+
+#select,
+#input {
+  position: relative;
+  height: 40px;
+  width: 120px;
+  background-color: #eee;
+  cursor: horizontal;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px 0px;
+  border-radius: 3px;
+}
+
+#submit {
+  position: relative;
+  height: 40px;
+  width: 120px;
+  background-color: #09f;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+table {
+  position: relative;
+  top: 150px;
+  font-size: 18px;
+  width: 100%;
+  border: 5px none black;
+  border-collapse: collapse;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.subject-group {
+  display: list-item;
+  list-style: none;
+  height: 40px;
+  width: 120px;
+  color: #09f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px 0px;
+  cursor: pointer;
+  
+}
+
+.subject-group:hover {
+  background-color: rgba(0, 116, 217, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.tb-body {
+  font-weight: bold;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+}
+
+.tb-head {
+  background-color: rgb(201, 220, 233);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
