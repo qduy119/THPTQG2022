@@ -1,9 +1,9 @@
 const getCom = document.querySelector("#select");
 const getScore = document.querySelector("#input");
 const getResult = document.querySelector("#submit");
-const getTable = document.querySelector(".tb");
 const getSubjGroup = document.querySelector(".group");
 const overlay = document.querySelector(".overlay");
+const tbBody = document.querySelector(".tb-body");
 
 let isDisplayed = 0;
 const getAPI = async function (subjectName, score) {
@@ -24,7 +24,7 @@ const getAPI = async function (subjectName, score) {
           <td>${univer.entry_score}</td>
         </tr>
         `;
-        getTable.insertAdjacentHTML("beforebegin", html);
+        tbBody.insertAdjacentHTML("beforeend", html);
       }
     }
   } catch (err) {
