@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/pinOnCat.jpg" />
-    <link rel="stylesheet" href="style.css" />
-    <title>THPT 2022</title>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Điểm thi năm 2021 và gợi ý chọn nguyện vọng</h1>
-    </div>
-    <div class="main">
-      <div class="choice">
-        <input
-          type="text"
-          name="select"
-          id="select"
-          placeholder="Chọn tổ hợp"
-        />
-        <div class="group hidden">
-          <span class="subject-group">A01</span>
-          <span class="subject-group">A00</span>
-          <span class="subject-group">B00</span>
-          <span class="subject-group">C00</span>
-          <span class="subject-group">C01</span>
-          <span class="subject-group">D01</span>
-          <span class="subject-group">D07</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="img/pinOnCat.jpg" />
+        <link rel="stylesheet" href="style.css" />
+        <title>THPT 2022</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Điểm thi năm 2021 và gợi ý chọn nguyện vọng</h1>
         </div>
-      </div>
-      <div class="input">
-        <input type="text" name="input" id="input" placeholder="Nhập điểm" />
-      </div>
-      <div class="result">
-        <button type="submit" id="submit">Xem kết quả</button>
-      </div>
-    </div>
-    <div>
-      <table border="1">
-        <thead class="tb-head"></thead>
-        <tbody class="tb-body"></tbody>
-      </table>
-    </div>
-    <div class="overlay"></div>
-    <script src="main.js"></script>
-  </body>
+        <div class="main">
+            <div class="choice">
+                <input
+                    type="text"
+                    name="select"
+                    id="select"
+                    placeholder="Chọn tổ hợp"
+                />
+                <div class="group hidden">
+                    <span class="subject-group">A01</span>
+                    <span class="subject-group">A00</span>
+                    <span class="subject-group">B00</span>
+                    <span class="subject-group">C00</span>
+                    <span class="subject-group">C01</span>
+                    <span class="subject-group">D01</span>
+                    <span class="subject-group">D07</span>
+                </div>
+            </div>
+            <div class="input">
+                <input
+                    type="text"
+                    name="input"
+                    id="input"
+                    placeholder="Nhập điểm"
+                />
+            </div>
+            <div class="result">
+                <button type="submit" id="submit">Xem kết quả</button>
+            </div>
+        </div>
+        <div>
+            <table border="1">
+                <thead class="tb-head"></thead>
+                <tbody class="tb-body"></tbody>
+            </table>
+        </div>
+        <div class="overlay hidden"></div>
+        <script src="main.js"></script>
+    </body>
 </html>
